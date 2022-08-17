@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0F2027;
+    height: 128vh;
+    box-sizing: border-box;
+}
+
+/* text typing */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /* background-color: #0F2027; */
+}
+
+.wrapper .static-txt {
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    /* color: rgb(255, 225, 53); */
+    font-size: 62px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(1) infinite;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.dynamic-txts li span {
+    letter-spacing: 20px;
+    color: crimson;
+	text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0,0,0,0.15);
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li {
+    position: relative;
+}
+
+.dynamic-txts li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0F2027;
+    border-left: 1px solid #0F2027;
+    animation: typing 6s steps(13) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+/* text typing selesai */
+
+
+/* navbar */
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #0F2027;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 2;
+}
+  
+.nav > .nav-header {
+    display: inline;
+}
+  
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+	font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 10px;
+}
+  
+.nav > .nav-btn {
+    display: none;
+}
+  
+.nav > .nav-links {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 12px 13px 12px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+  
+.nav > .nav-links > a:hover {
+    background-color: rgba(255, 238, 161, 0.2);
+    border-radius: 4px;
+}
+  
+.nav > #nav-check {
+    display: none;
+}
+/* navbar selesai */
+
+
+/* header */
+
+.container-header {
+    /* margin-top: 10px; */
+    background-color: crimson;
+    height: 550px;
+}
+
+.judul-header {
+    color: #0F2027;
+}
+
+.judul-header h1 {
+    margin-top: 150px;
+    margin-left: 540px;
+    position: absolute;
+    font-size: 130px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.judul-header span {
+    margin-left: 690px;
+    margin-top: 330px;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 500;
+    color: #0F2027;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.button-header {
+    font-family: sans-serif;
+}
+
+.btn-header1 {
+    margin-top: 513px;
+    margin-left: 840px;
+    position: absolute;
+    color: #fff;
+    background-color: #0F2027;
+    padding: 30px 70px 30px 70px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: none;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.btn-header1:hover {
+    opacity: 1;
+}
+/* header selesai */
+
+
+/* presiden */
+.header2 {
+    height: 730px;
+    background-color: #fff;
+}
+
+.presiden {
+    font-family: sans-serif;
+}
+
+.presiden span {
+    position: absolute;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-top: 130px;
+    margin-left: 535px;
+}
+
+.card {
+    background-color: #fff;
+    min-width: 100%;
+    min-height: 200px;
+}
+ 
+.card {
+    display: flex;
+}
+ 
+.card--content{
+    min-width: 350px;
+    margin-top: 340px;
+}
+
+.card--content img {
+    height: 400px;
+    width: 380px;
+}
+ 
+.card{
+    overflow-x: auto;
+}
+/* presiden selesai */
+
+
+/* tahun 1945 */
+.pin-title{
+    color: #666;
+    border-bottom: 5px solid #dedede;
+    padding-bottom: 20px;
+  }
+  .posts{
+    background: white;
+    padding: 30px;
+    width: 600px;
+    margin: 1em auto;
+  }
+  
+  .post{
+    display: block;
+    padding: 40px;
+    overflow: hidden;
+    border-bottom: 2px solid #dedede;
+  }
+  
+  .post-title{
+    font-size: 32px;
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
+  
+  .post-meta{
+    color: #999;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  
+  .post-thumb{
+    max-width: 150px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .right{
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .post-excerpt{
+    overflow: hidden;
+  }
+  
+  .post:last-child .post-excerpt{
+    overflow: visible;
+  }
+  
+/* tahun 1945 selesai */
+  
